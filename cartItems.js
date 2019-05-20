@@ -12,7 +12,7 @@ const cartItems = express.Router();
 
 
 // accept GET request at URI: /cartItems
-cartItems.get('/cartItems', (req, res) => {
+cartItems.get('/', (req, res) => {
     console.log('test');
     console.log(req.body);
 res.send(cartData);
